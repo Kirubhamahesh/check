@@ -1,0 +1,67 @@
+<html>
+
+<head>
+  <style>
+  
+  #nav
+  {
+    background-color: white;
+    color:black;
+    
+  }
+
+  li{
+    float: right;
+    display: inline;
+    padding: 20px 50px;
+    text-decoration: none;
+  }
+
+  li:hover
+  {
+    background-color:cornflowerblue;
+    color:white;
+  }
+  </style>
+</head>
+  <script>
+  
+  function func()
+    {
+      setInterval(function(){
+        
+         document.getElementById('giff').style.display="none";
+
+          document.getElementById('main').style.display="block";
+
+
+         
+         }, 3000);
+    }
+  
+  </script>
+  <body onload="func()" style="background-color: aliceblue">
+   <div id="giff" >
+
+      <img src="loader.gif">
+
+   </div>
+
+   <div id="main" style="display:none">
+
+    
+    <div id="nav">
+
+      <ul>
+        <li>HOME</li>
+        <li>FPAGE</li>
+        <li>SPAGE</li>
+        <li>FPAGE</li>
+
+        
+        
+      </ul>
+    </div>
+   </div>
+  </body>
+</html>
